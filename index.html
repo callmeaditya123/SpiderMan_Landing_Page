@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiderman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>
+                Spider-Man
+            </h1>
+            <ul class="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button id="btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <section>
+            <div class="container">
+                <h1>the Unstoppable World of Spider-Man</h1>
+                <p>
+                    Welcome to the epicenter of all things Spider-Man! Unleash the irreverent charm, unparalleled wit, and the sheer madness that define the Merc with a Mouth. Join us on a wild ride through the chaotic adventures of Wade Wilson, where humor meets action, and the unexpected is just another Tuesday.
+                </p>
+                <div class="buttons">
+                    <button>Try</button>
+                    <button>Watch</button>
+                </div>
+            </div>
+            <img src="./spiderman1.png" alt="">
+        </section>
+    </header>
+</body>
+<script>
+    const btn= document.getElementById("btn")
+    const list= document.querySelector(".list")
+
+    btn.addEventListener("click", ()=>{
+        list.classList.toggle("show")
+    })
+</script>
+</html>
